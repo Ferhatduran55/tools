@@ -1,3 +1,4 @@
+const { exit } = require("process");
 function getEnv(properties, isInt = false) {
     var output;
     var arr = Object.entries(process.env);
