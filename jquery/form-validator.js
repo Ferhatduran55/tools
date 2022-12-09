@@ -23,7 +23,7 @@ $.fn.valid = function (returnType = false) {
         type = this.attr("type");
     }
     const types = {
-        text: /^[a-z0-9]{0,}$/i,
+        text: /^([a-zA-Z0-9].*)$/gmi,
         number: /^\d+$/,
         email: /(?:^|[^\wığüşöçĞÜŞÖÇİ])^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/,
         password: /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9])(?=.*?[@$!%*?&_])[A-Za-z\d$@$!%*?&_].{6,})\S$/,
