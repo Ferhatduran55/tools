@@ -1,19 +1,14 @@
 /**
  * 
- * @param returnType enter boolean value or use default value
- * @argument dataType
+ * @param returnType boolean
+ * @return array|boolean
+ * @description enter boolean value or use default value
+ * 
+ * @argument dataType string
+ * @description
  *  This argument setting in the element property requires
  *  a string value that allows you to validate whatever
  *  type you want, regardless of the element type.
- * @returns
- *  true: array(`valid`,`type`)
- *  false: `valid`
- * 
- * @example element:input, type:text
- * @event input.valid(true): {
- *  @param returnType = true
- *  @returns [true,"text"]
- * }
  * 
  */
 $.fn.valid = function (returnType = false) {
